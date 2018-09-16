@@ -112,7 +112,7 @@ const InfoHeader = props => {
     <header className={classes.header}>
       <Link className={classes.avatarLink} onClick={avatarOnClick} to="/" title="Back Home">
         <div className={classes.avatar}>
-          <img src={headshot} alt="Headshot of Ben Ilegbodu" />
+          <img src={headshot} alt="Headshot of Sanket Gandhi" />
         </div>
       </Link>
       <h1 className={classes.title}>
