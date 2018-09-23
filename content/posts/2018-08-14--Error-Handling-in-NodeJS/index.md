@@ -11,7 +11,7 @@ _It is important to realize that in any Node.js application handling of uncaught
 
 * **Tag your errors:** Whenever you catch an error, specify within the error object whether its a safe/trusted/operational error or unknown/developer error, then throw it.
 * **Catch all API errors and decide whether they are safe:** At your API endpoints use promises and try-catch all errors, forward the errors to express error handler, there decide whether this is a known/trusted (see above point) error — then just return some HTTP status and error to the caller. If the error is unknown — throw it and let step 3 (below point) handle it.
-* **Centrally catch leftovers and restart:** Using`process.onuncaughexpcetion` process all uncaught errors, if the error is not marked as safe then exit the process and let your process manager take care to restart.
+* **Centrally catch leftovers and restart:** Using `process.onuncaughexpcetion` process all uncaught errors, if the error is not marked as safe then exit the process and let your process manager take care to restart.
 * Use try-catch only for `JSON.parse()` statement. Don't use this in other scenarios
 * Use custom errors like,
 
