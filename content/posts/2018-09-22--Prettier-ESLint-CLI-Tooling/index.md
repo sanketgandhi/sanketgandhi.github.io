@@ -1,7 +1,7 @@
 ---
 title: Prettier, ESLint, CLI and Tools
 category: javascript
-tags: [tools]
+tags: [javascript]
 cover: Tools.jpg
 ---
 ![Tools](Tools.jpg)
