@@ -1,3 +1,17 @@
 # Sanket Gandhi
 
-Blog: https://sanketgandhi.com
+✅Gatsby
+
+✅React
+
+✅GraphQL
+
+✅Redux
+
+✅Algolia
+
+✅Webpack
+
+✅Babel
+
+✅Netlify
