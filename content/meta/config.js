@@ -6,7 +6,7 @@ module.exports = {
   shortSiteTitle: 'Sanket Gandhi',
   siteDescription:
     'Senior Software Engineer 👨🏻‍💻 @247_Software | JS • Node • React • PHP • AWS | I 💗 web',
-  siteUrl: 'sanketgandhi.github.io',
+  siteUrl: 'https://sanketgandhi.com',
   pathPrefix: '',
   siteImage: 'preview.jpg',
   siteLanguage: 'en',
