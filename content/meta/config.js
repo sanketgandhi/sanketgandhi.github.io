@@ -25,10 +25,18 @@ module.exports = {
   manifestDisplay: 'standalone',
   // social
   authorSocialLinks: [
-    {name: 'twitter', url: 'https://twitter.com/sanketgandhi876', title: 'Follow Sanket Gandhi on Twitter'},
+    {
+      name: 'twitter',
+      url: 'https://twitter.com/sanketgandhi876',
+      title: 'Follow Sanket Gandhi on Twitter',
+    },
     {name: 'github', url: 'https://github.com/sanketgandhi', title: "Sanket Gandhi's projects"},
-    {name: 'linkedin', url: 'https://linkedin.com/in/sanketgandhi876', title: "Sanket Gandhi's resume"},
+    {
+      name: 'linkedin',
+      url: 'https://linkedin.com/in/sanketgandhi876',
+      title: "Sanket Gandhi's resume",
+    },
   ],
   // disqus
-  disqusShortname: 'sanketgandhi876',
+  disqusShortname: 'sanketgandhi-com',
 }
