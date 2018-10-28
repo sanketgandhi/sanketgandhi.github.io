@@ -1,17 +1,17 @@
 # Sanket Gandhi
 
-✅Gatsby
+▶︎ Gatsby
 
-✅React
+▶︎ React
 
-✅GraphQL
+▶︎ GraphQL
 
-✅Redux
+▶︎ Redux
 
-✅Algolia
+▶︎ Algolia
 
-✅Webpack
+▶︎ Webpack
 
-✅Babel
+▶︎ Babel
 
-✅Netlify
+▶︎ Netlify
