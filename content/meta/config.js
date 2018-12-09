@@ -5,7 +5,7 @@ module.exports = {
   siteTitle: 'Sanket Gandhi',
   shortSiteTitle: 'Sanket Gandhi',
   siteDescription:
-    'Senior Software Engineer 👨🏻‍💻 @247_Software | JS • Node • React • PHP • AWS | I 💗 web',
+    'JS • NodeJS • React • PHP • AWS',
   siteUrl: 'https://sanketgandhi.com',
   pathPrefix: '',
   siteImage: 'preview.jpg',
@@ -15,7 +15,7 @@ module.exports = {
   authorTwitterAccount: 'sanketgandhi876',
   // info
   infoTitle: 'Sanket Gandhi',
-  infoTitleNote: 'Senior Software Engineer',
+  infoTitleNote: 'Team Lead',
   // manifest.json
   manifestName: 'Sanket Gandhi',
   manifestShortName: 'sanketgandhi', // max 12 characters

@@ -1,5 +1,3 @@
-# Sanket Gandhi
-
 ▶︎ Gatsby
 
 ▶︎ React
