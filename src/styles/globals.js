@@ -77,7 +77,7 @@ export default {
      */
     'code, kbp, samp': {
       fontFamily: 'monospace, monospace' /* 1 */,
-      fontSize: '1em' /* 2 */,
+      fontSize: '0.75em' /* 2 */,
     },
 
     /**
@@ -353,7 +353,7 @@ export default {
     body: {
       margin: 0,
       //overflow: "hidden",
-      '-webkit-tap-highlight-color': 'rgba(0,0,0,.05)',
+      '-webkit-tap-highlight-color': 'rgba(1,1,1,1)',
     },
     wrapper: {},
     main: {
