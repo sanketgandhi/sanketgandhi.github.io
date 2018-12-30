@@ -1,5 +1,5 @@
 ---
-title: Async Module In NodeJS
+title: Async Module In Node.js
 category: nodejs
 tags: [nodejs]
 cover: Async.jpg
@@ -21,45 +21,45 @@ Here is simple code that illustrate the example:
 
 ```javascript
 const startProcessing = function() {
-  console.log('Start Processesing')
+  console.log('Start Processesing');
   download(function() {
     process(function() {
       upload(function() {
         del(function() {
-          console.log('All function has benn proceessed!')
-        })
-      })
-    })
-  })
-}
+          console.log('All function has benn proceessed!');
+        });
+      });
+    });
+  });
+};
 
 const download = function(callback) {
-  console.log('Start downloading file ➡️')
-  delay()
-  console.log('Finished downloading ✅')
-  callback(null, 'Downloaded data')
-}
+  console.log('Start downloading file ➡️');
+  delay();
+  console.log('Finished downloading ✅');
+  callback(null, 'Downloaded data');
+};
 
 const process = function(callback) {
-  console.log('Start Procesing File ➡️')
-  delay()
-  console.log('Finished processing ✅')
-  callback()
-}
+  console.log('Start Procesing File ➡️');
+  delay();
+  console.log('Finished processing ✅');
+  callback();
+};
 
 const upload = function(callback) {
-  console.log('Start Uploading File ➡️')
-  delay()
-  console.log('File Uploaded Successfully ✅')
-  callback()
-}
+  console.log('Start Uploading File ➡️');
+  delay();
+  console.log('File Uploaded Successfully ✅');
+  callback();
+};
 
 const del = function(callback) {
-  console.log('Started deleting file ➡️')
-  delay()
-  console.log('File Deleted Successfully ✅')
-  callback()
-}
+  console.log('Started deleting file ➡️');
+  delay();
+  console.log('File Deleted Successfully ✅');
+  callback();
+};
 
 // Mock up function to illustrate the real time scenario
 const delay = function() {
@@ -68,9 +68,9 @@ const delay = function() {
       //do nothing
     }
   }
-}
+};
 
-startProcessing()
+startProcessing();
 ```
 
 The above code will run each function one after another and gives below output.
