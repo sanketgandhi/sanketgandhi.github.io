@@ -29,3 +29,5 @@ npm config set init-author-name "Sanket Gandhi" -g
 ```
 
 Now you can run `npm init -y` and it will put all default values in package.json file.
+
+Happy Coding 🔥

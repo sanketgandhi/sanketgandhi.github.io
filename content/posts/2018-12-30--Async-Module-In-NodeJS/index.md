@@ -81,6 +81,84 @@ But did you saw `startProcessing` function. It is what we called "Callback Hell"
 
 So imagine if you have lots of other function that needs to be executed one after another then how your code will look and how you will maintain the code and as always debugging will be nightmare.
 
-So `Async` module come to rescue and can help us to write the code in better way.
+So `Async` module come to rescue and can help us to write the code in better way. You can install it using `npm install async`
 
-We can utilize `waterfall` method which will be helpful in this situation.
+We can utilize `waterfall` method which will be helpful in this situation. We can replace `startProcessing` function to use `async.waterfall`. First paramter will be the array of task and second one is the global callback.
+
+```javascript
+const async = require('async');
+
+const startProcessing = function() {
+  console.log('Start Processesing');
+  async.waterfall([download, process, upload, del], function(err, data) {
+    if (err) {
+      console.log('Error: ' + err);
+    } else {
+      console.log('Finished Processing');
+    }
+  });
+};
+```
+
+This is lot cleaner and userful for debugging, right? See below full example:
+
+```javascript
+const async = require('async');
+
+const startProcessing = function() {
+  console.log('Start Processesing');
+  async.waterfall([download, process, upload, del], function(err, data) {
+    if (err) {
+      console.log('Error: ' + err);
+    } else {
+      console.log('Finished Processing');
+    }
+  });
+};
+
+const download = function(callback) {
+  console.log('Start downloading file ➡️');
+  delay();
+  console.log('Finished downloading ✅');
+  // callback('Download Failed!!! 🐛', 'Downloaded data');
+  callback(null, 'Downloaded data');
+};
+
+const process = function(data, callback) {
+  console.log('Start Procesing File ➡️');
+  console.log('The data is received from download: ', data);
+  delay();
+  console.log('Finished processing ✅');
+  callback();
+};
+
+const upload = function(callback) {
+  console.log('Start Uploading File ➡️');
+  delay();
+  console.log('File Uploaded Successfully ✅');
+  callback();
+};
+
+const del = function(callback) {
+  console.log('Started deleting file ➡️');
+  delay();
+  console.log('File Deleted Successfully ✅');
+  callback();
+};
+
+const delay = function() {
+  for (let index = 0; index < 10000; index++) {
+    for (let x = 0; x < 100000; x++) {
+      //do nothing
+    }
+  }
+};
+
+startProcessing();
+```
+
+Async module provide alot of methods to these kind of operations. Checkout the [documentation](http://caolan.github.io/async/).
+
+Examples repo: https://github.com/sanketgandhi/async-module-examples
+
+Happy Coding 🔥
