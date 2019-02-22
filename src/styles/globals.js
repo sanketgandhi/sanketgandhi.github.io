@@ -374,5 +374,13 @@ export default {
     'input:-webkit-autofill': {
       '-webkit-box-shadow': '0 0 0 50px white inset',
     },
+    ":not(pre) > code[class*='language-']": {
+      background: "#eee",
+      color: "#000",
+      background: "#eeebfb",
+      textShadow: "none",
+      padding: "1px 5px",
+      borderRadius: "2px"
+    }
   },
 }

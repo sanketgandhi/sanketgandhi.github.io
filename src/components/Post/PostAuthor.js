@@ -36,7 +36,7 @@ const styles = theme => ({
   },
   box: {
     display: 'flex',
-    flexDirction: 'column',
+    flexDirection: 'column',
     minHeight: '50px',
     alignItems: 'center',
   },
